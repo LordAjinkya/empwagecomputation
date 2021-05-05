@@ -5,6 +5,7 @@ public class EmployeeWageBuilder {
 	public static final int IS_FULL_TIME = 2;
 	public static final int EMP_RATE_PER_HOUR = 20;
 	private static final int EMP_FULLTIMEHOUR=8;
+	private static final int EMP_PARTTIMEHR=4;
 
 	public static void main(String[] args) {
 
@@ -17,7 +18,7 @@ public class EmployeeWageBuilder {
 		}
 			
 		else
-			System.out.println("Employee is absent");
+			System.out.println("Half day wage of emp is:"+EMP_RATE_PER_HOUR*EMP_PARTTIMEHR);
 		
 
 	}
