@@ -1,15 +1,24 @@
 package empwagebuilder;
 
 public class EmployeeWageBuilder {
+	public static final int IS_PART_TIME = 1;
+	public static final int IS_FULL_TIME = 2;
+	public static final int EMP_RATE_PER_HOUR = 20;
+	private static final int EMP_FULLTIMEHOUR=8;
 
 	public static void main(String[] args) {
 
 		int is_full_time = 1;
 		double empcheck = Math.floor(Math.random() * 10) % 2;
-		if (empcheck == is_full_time)
+		if (empcheck == is_full_time) {
 			System.out.println("Employee is present");
+		    System.out.println("Daily employee wage is: "+EMP_RATE_PER_HOUR*EMP_FULLTIMEHOUR);
+			
+		}
+			
 		else
 			System.out.println("Employee is absent");
+		
 
 	}
 
